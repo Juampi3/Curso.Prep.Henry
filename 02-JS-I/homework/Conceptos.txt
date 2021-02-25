@@ -1,0 +1,30 @@
+Variables: 
+Almacenan el valor de algo para usar más tarde. Por ejemplo, si tenes una carta (el as de espadas) y estas jugando un juego en el cual vale 100 puntos, durante todo el juego esa carta vale 100 puntos. 
+Cuando decides cambiar de juego, y empiezas a jugar al truco, la carta deja de valer 100 puntos y empieza a ser "el macho".
+La carta "as de espadas" es en este caso la variable, y según el juego se le asignó un valor distinto: 100 puntos o "el macho".
+En JS esta "carta" se introduce como "var" y la asignación que se le haga se realiza anteponiendo el signo "=".
+
+Strings
+Son las palabras escritas, las cuales van entre "". Siguiendo con el ejemplo anterior, "el macho" sería un string. Y para asignarle este valor a nuestra variable, sería var = "el macho".
+
+Funciones (argumentos, return)
+Agrupa códigos y los guarda, para ser ejecutados cuando vuelvan a ser tipeados. Si estos códigos utilizan variables, las mismas se mencionan al antes de ingresar el código entre () y se denomina Argumentos.
+Si queremos que ese código, el cual se escribe entre {}, nos devuelva algo visualmente, deberemos usar la función "return".
+Por ejemplo:
+function Cartas(espada){
+return "el macho"
+}
+
+Declaraciones if
+La declaración if es una función la cual podría asimilarse a si preguntara de manera condicional "si?". Habrá que agregarle el código con la condición que deberá cumplir para contestar esta pregunta, ya sea afirmativamente
+(true) o negativamente (false). Estos valores son denominados booleanos, y son un tipo de datos, al igual que los strings o los números.
+Podemos escribir como ejemplo:
+function Cartas(elmacho){
+if (elmacho === 1){
+return "SI";
+}
+return "NO";
+}
+
+En este caso, la funcion asociará que si la variable ingresada (en este caso un número, el cual se denomina elmacho) es igual a 1, le asignará el valor booleano "true" y por lo tanto la respuesta "SI",
+mientras que si el número no es igual a 1, le asignará "false", y la respuesta "NO".
